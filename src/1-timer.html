@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <!-- Подключение стилей -->
+    <title>1-timer</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Подключение стилей библиотек -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
@@ -22,7 +20,6 @@
       <div class="container">
         <nav class="nav">
           <a class="nav-logo" href="./index.html" aria-label="Site logo">
-            <!-- Используем тег <img> для внешнего SVG -->
             <img
               class="nav-logo-icon"
               src="./img/logo.svg"
@@ -31,27 +28,13 @@
               height="30"
             />
           </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <!-- Убрали некорректный синтаксис из атрибута class -->
-              <a class="nav-link" href="./1-timer.html">Timer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./2-snackbar.html">Snackbar</a>
-            </li>
-          </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- Включаем содержимое напрямую или используем JavaScript для динамической загрузки -->
-      <!-- Контент из vite-promo.html -->
-      <section>
-        <!-- Содержимое файла vite-promo.html -->
-      </section>
+      <section></section>
 
-      <!-- Остальной контент страницы -->
       <input type="text" id="datetime-picker" />
       <button data-start>Start</button>
 
@@ -75,15 +58,11 @@
       </div>
     </main>
 
-    <!-- Включаем содержимое footer.html напрямую -->
-    <footer>
-      <!-- Содержимое файла footer.html -->
-    </footer>
+    <footer></footer>
 
-    <!-- Подключение скриптов библиотек -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
-    <!-- Подключение вашего скрипта -->
+
     <script src="./js/1-timer.js"></script>
   </body>
 </html>
