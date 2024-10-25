@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */const o=document.querySelector(".form");function r(e,t){return new Promise((n,s)=>{setTimeout(()=>{t?n(e):s(e)},e)})}o.addEventListener("submit",e=>{e.preventDefault();const t=parseInt(o.elements.delay.value),s=o.elements.state.value==="fulfilled";r(t,s).then(i=>{iziToast.success({title:"✅ Fulfilled promise",message:`in ${i}ms`,position:"topRight"})}).catch(i=>{iziToast.error({title:"❌ Rejected promise",message:`in ${i}ms`,position:"topRight"})})});
+//# sourceMappingURL=2-snackbar.js.map
