@@ -5,19 +5,20 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
 }
 
 .nav-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding-right: 400px;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
   gap: 40px;
 }
 

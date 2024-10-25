@@ -19,11 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     minuteIncrement: 1,
     onClose(selectedDates) {
       const currentDate = new Date();
-
       if (selectedDates[0] <= currentDate) {
         iziToast.error({
-          title: 'Ошибка',
-          message: 'Пожалуйста, выберите дату в будущем',
+          title: 'Error',
+          message: 'Please choose a date in the future',
         });
         startBtn.disabled = true;
       } else {
@@ -47,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(timerId);
         updateTimerDisplay(0);
         datetimePicker.disabled = false;
+        startBtn.disabled = true;
         return;
       }
 
@@ -74,11 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const day = hour * 24;
 
     const days = Math.floor(ms / day);
-
     const hours = Math.floor((ms % day) / hour);
-
     const minutes = Math.floor(((ms % day) % hour) / minute);
-
     const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
     return { days, hours, minutes, seconds };
